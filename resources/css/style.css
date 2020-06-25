@@ -55,12 +55,29 @@ h3 {
     margin-bottom: 15px;
 }
 
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #009444;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: -25px;
+}
+
 
 /* -------------------------REUSABLE COMPONENTS */
 
 .row {
-    max-width: 1140px;
+    max-width: 100%;
     margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    padding: 50px 0;
 }
 
 
@@ -155,22 +172,141 @@ a:active {
 }
 
 
-/* -------------------------CAROUSEL */
+/* -------------------------SECTION FEATURES */
 
-.carousel-box {
-    position: relative;
+.section-features h2 {
+    width: 100%;
+    padding-bottom: 10px;
 }
 
-.carousel-caption {
-    position: absolute;
+.features-icon {
+    font-size: 200%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.features-description {
+    font-size: 16px;
+    text-transform: lowercase;
     color: #555;
+}
+
+.services {
+    font-size: 75%;
     text-transform: uppercase;
-    font-size: 170%;
-    font-weight: 350;
-    background-color: rgba(255, 255, 255, 0.781);
-    height: 15%;
-    bottom: 0;
-    left: 32%;
-    right: 32%;
-    letter-spacing: 0.03em;
+}
+
+
+/* -------------------------SECTION COUNTERS */
+
+.counters-box {
+    width: 100%;
+    color: #fff;
+    background-color: #555;
+    padding-bottom: 20px;
+    margin-top: -50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.count {
+    font-size: 250%;
+    font-weight: 800;
+    margin: 0;
+}
+
+.services {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+/* -------------------------SECTION CONTACT */
+
+.googlemap {
+    padding-top: 30px;
+    width: 100%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    width: 1140px;
+    margin-top: 0;
+}
+
+.contact-icon {
+    flex: 0 1 3%;
+    font-size: 300%;
+    padding-top: 0;
+    margin: 0px;
+    vertical-align: top;
+    height: 130px;
+    color: #009444;
+}
+
+.contact-details {
+    flex: 0 1 30%;
+    background: #fff;
+    margin-right: 5%;
+}
+
+.contact-info {
+    margin: 0;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    text-align: left;
+}
+
+.info-heading {
+    font-size: 120%;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    flex: 0 1 40%;
+    background: #fff;
+    margin-right: 5%;
+}
+
+.contact-form .form-control {
+    border-radius: 1rem;
+}
+
+.contact-form h2 {
+    margin-bottom: 10%;
+    margin-top: -10%;
+    text-align: center;
+    color: #555;
+}
+
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.5%;
+    background: #009444;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnContactSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #009444;
+    border: none;
+    cursor: pointer;
+}
+
+.form-control {
+    font-size: 13px;
 }
