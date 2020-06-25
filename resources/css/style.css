@@ -174,9 +174,8 @@ a:active {
 
 /* -------------------------SECTION FEATURES */
 
-.section-features h2 {
-    width: 100%;
-    padding-bottom: 10px;
+.section-features {
+    padding-top: 10px;
 }
 
 .features-icon {
@@ -229,8 +228,9 @@ a:active {
 /* -------------------------SECTION CONTACT */
 
 .googlemap {
-    padding-top: 30px;
+    padding: 0;
     width: 100%;
+    margin: 0;
 }
 
 .contact-container {
@@ -238,6 +238,7 @@ a:active {
     flex-direction: row;
     width: 1140px;
     margin-top: 0;
+    padding: 20px;
 }
 
 .contact-icon {
@@ -281,7 +282,7 @@ a:active {
 
 .contact-form h2 {
     margin-bottom: 10%;
-    margin-top: -10%;
+    margin-top: -75px;
     text-align: center;
     color: #555;
 }
@@ -309,4 +310,187 @@ a:active {
 
 .form-control {
     font-size: 13px;
+}
+
+
+/* -------------------------SECTION ABOUT US */
+
+.section-about-us h2 {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(133, 133, 133);
+}
+
+.left-half {
+    font-size: 18px;
+    color: #fff;
+    flex: 1;
+    padding: 0.1rem;
+    border-right: 1px solid rgb(214, 214, 214);
+    text-align: center;
+    padding: 0 100px;
+    background-color: rgb(133, 133, 133);
+}
+
+.right-half {
+    font-size: 18px;
+    color: #fff;
+    flex: 1;
+    padding: 0.1rem;
+    text-align: center;
+    padding: 0 100px;
+    background-color: rgb(133, 133, 133);
+}
+
+h4 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.directors-photo {
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+/* -------------------------SECTION PROJECTS */
+
+
+/* ----------------------------------------------- */
+
+
+/* MEALS */
+
+
+/* ----------------------------------------------- */
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+h5 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+
+/* ----------------------------------------------- */
+
+
+/* FOOTER */
+
+
+/* ----------------------------------------------- */
+
+footer {
+    background-color: #333;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 150px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
 }
